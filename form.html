@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>HTML form</title>
+</head>
+
+<body bgcolor=red>
+    <h1>Form Input</h1>
+    <form class="" action="myanmar.html" method="post">
+
+        <fieldset>
+            <legend>Basic Things</legend>
+            <label for="fname">Name</label>
+            <strong><abbr title="required">*</abbr></strong><br>
+            <input type="text" name="name" value="" placeholder="trick" required><br>
+            <div id="demo">
+
+            <input type="button" name="email" value="email" onclick="test()"><br>
+          </div>
+
+            <label for="password">Password</label><br>
+            <input type="password" name="password" value=""><br>
+        </fieldset>
+
+        <label for="address">Address:</label><br>
+        <textarea name="address" rows="8" cols="40"></textarea><br>
+
+        <br>
+        <input type="radio" name="gender" value="male">
+        <label for="male">Male</label>
+
+        <input type="radio" name="gender" value="female">
+        <label for="female">Female</label><br>
+
+        <label for="education">Highest Education</label><br>
+        <select class="" name="education">
+        <option>High School</option>
+        <option>Bachelor</option>
+        <option>Post Graduate</option>
+        <option>Master</option>
+        <option>PH.D</option>
+        </select><br><br>
+
+        <input type="submit" name="name" value="Send" >
+        <script type="text/javascript">
+        function test(){
+          var email=window.prompt("Enter the Email");
+          var tomach=/[a-zA-Z0-9_\,\-]{2,}\@[a-zA-Z0-9\-]\{3,}\.[a-zA-Z]{3}/
+          if(tomach.test(email)){
+            window.alert("Validate email");
+          }
+          else{
+            window.alert("Invalid email");
+          }
+        }
+        </script>
+
+        
+    </form>
+</body>
+
+</html>
